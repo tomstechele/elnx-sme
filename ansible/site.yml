@@ -1,5 +1,5 @@
 # site.yml
 ---
-- hosts: pu004
-  become: true
-  roles: rh-base
+- hosts: all
+  roles:
+    - rh-base
