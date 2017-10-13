@@ -20,14 +20,14 @@ Every lab report should contain a test plan. To give an idea of what is meant by
 - Execute `vagrant up pu004`
     - The command should run without errors (exit status 0)
 
-   ![vagrant up pu004] (https://github.com/HoGentTIN/elnx-sme-tomstechele/blob/tomstechele/report/Images/vagrant_up.png)
+   ![vagrant up pu004] (https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/00-server-setup/vagrant_up.PNG)
 
 
 
 
 - Log in on the server with `vagrant ssh pu004` and run the acceptance tests. They should succeed
 
- ![vagrant ssh pu004] (https://github.com/HoGentTIN/elnx-sme-tomstechele/blob/tomstechele/report/Images/vagrant_ssh.png)
+ ![vagrant ssh pu004] (https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/00-server-setup/vagrant_ssh.PNG)
 
     ```
     [vagrant@pu004 test]$ sudo /vagrant/test/runbats.sh
@@ -45,7 +45,7 @@ Every lab report should contain a test plan. To give an idea of what is meant by
 
     10 tests, 0 failures
     ```
-![vagrant test slagen](https://github.com/HoGentTIN/elnx-sme-tomstechele/blob/tomstechele/report/Images/vagrant_test.png)
+![vagrant test slagen](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/00-server-setup/vagrant_test.PNG)
 
     Any tests for the LAMP stack may fail, but this is not part of the current assignment.
 
