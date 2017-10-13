@@ -20,14 +20,14 @@ Every lab report should contain a test plan. To give an idea of what is meant by
 - Execute `vagrant up pu004`
     - The command should run without errors (exit status 0)
 
-   ![vagrant up pu004] (https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/00-server-setup/vagrant_up.PNG)
+   ![vagrant up pu004](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/00-server-setup/vagrant_up.PNG)
 
 
 
 
 - Log in on the server with `vagrant ssh pu004` and run the acceptance tests. They should succeed
 
- ![vagrant ssh pu004] (https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/00-server-setup/vagrant_ssh.PNG)
+ ![vagrant ssh pu004](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/00-server-setup/vagrant_ssh.PNG)
 
     ```
     [vagrant@pu004 test]$ sudo /vagrant/test/runbats.sh
