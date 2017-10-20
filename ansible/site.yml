@@ -2,4 +2,13 @@
 ---
 - hosts: all
   roles:
-    - rh-base
+    - bertvv.rh-base
+
+
+
+- hosts: pu004
+  sudo: true
+  roles:
+    - bertvv.mariadb
+    - bertvv.httpd
+    - bertvv.wordpress
