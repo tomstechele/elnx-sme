@@ -8,6 +8,15 @@
 
 - hosts: pu004
   sudo: true
+  pre_tasks:
+    - name: copy key file
+      copy:
+        src: files/pu004.key
+        dest: /etc/pki/tls/private/pu004.key
+    - name: copy cert files
+      copy:
+        src: files/pu004.crt
+        dest: /etc/pki/tls/certs/
   roles:
     - bertvv.mariadb
     - bertvv.httpd

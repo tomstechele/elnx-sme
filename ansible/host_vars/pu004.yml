@@ -10,7 +10,7 @@ httpd_scripting: 'php'
 wordpress_database_host: 192.0.2.50
 
 mariadb_databases:
-  - wp_db
+  - name: wp_db
 
 mariadb_root_password: fogMeHud8
 
