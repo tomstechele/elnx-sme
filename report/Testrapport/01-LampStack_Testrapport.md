@@ -25,22 +25,22 @@ Every lab report should contain a test plan. To give an idea of what is meant by
     ```
     [vagrant@pu004 test]$ sudo /vagrant/test/bats.sh
     Running test /vagrant/test/pu004/lamp.bats
- ✓ The necessary packages should be installed
- ✓ The Apache service should be running
- ✓ The Apache service should be started at boot
- ✓ The MariaDB service should be running
- ✓ The MariaDB service should be started at boot
- ✓ The SELinux status should be ‘enforcing’
- ✓ Web traffic should pass through the firewall
- ✓ Mariadb should have a database for Wordpress
- ✓ The MariaDB user should have "write access" to the database
- ✓ The website should be accessible through HTTP
- ✓ The website should be accessible through HTTPS
- ✓ The certificate should not be the default one
- ✓ The Wordpress install page should be visible under http://192.0.2.50/wordpress/
- ✓ MariaDB should not have a test database
- ✓ MariaDB should not have anonymous users
-   ```
+    ✓ The necessary packages should be installed
+    ✓ The Apache service should be running
+    ✓ The Apache service should be started at boot
+    ✓ The MariaDB service should be running
+    ✓ The MariaDB service should be started at boot
+    ✓ The SELinux status should be ‘enforcing’
+    ✓ Web traffic should pass through the firewall
+    ✓ Mariadb should have a database for Wordpress
+    ✓ The MariaDB user should have "write access" to the database
+    ✓ The website should be accessible through HTTP
+    ✓ The website should be accessible through HTTPS
+    ✓ The certificate should not be the default one
+    ✓ The Wordpress install page should be visible under http://192.0.2.50/wordpress/
+    ✓ MariaDB should not have a test database
+    ✓ MariaDB should not have anonymous users
+    ```
 
 
 ![vagrant test](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/testen.JPG)
