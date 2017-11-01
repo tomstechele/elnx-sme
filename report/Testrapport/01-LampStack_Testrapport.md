@@ -40,6 +40,7 @@ Every lab report should contain a test plan. To give an idea of what is meant by
  ✓ MariaDB should not have a test database
  ✓ MariaDB should not have anonymous users
   ```
+  
 
     ![vagrant test](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/testen.JPG)
 
