@@ -1,7 +1,7 @@
-# Enterprise Linux Lab Report
+# Enterprise Linux Lab Report: Lampstack testrapport
 
 - Student name:Tom Stechele
-- Github repo: <https://github.com/HoGentTIN/elnx-sme-tomstechele.git>
+- Github repo: <https://github.com/tomstechele/elnx-sme-tomstechele>
 
 Describe the goals of the current iteration/assignment in a short sentence.
 
@@ -15,9 +15,9 @@ Every lab report should contain a test plan. To give an idea of what is meant by
 - Execute `vagrant up pu004`
     - The command should run without errors (exit status 0)
 
-   ![vagrant up pu004] (https://github.com/HoGentTIN/elnx-sme-tomstechele/blob/tomstechele/report/Images/00_02.png)
+   ![vagrant up pu004] (https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/vagrantup.JPG)
 
-   ![vagrant login](https://github.com/HoGentTIN/elnx-sme-tomstechele/blob/tomstechele/report/Images/00_03.png)
+
 
 
 - Log in on the server with `vagrant ssh pu004` and run the acceptance tests. They should succeed
@@ -44,9 +44,10 @@ Every lab report should contain a test plan. To give an idea of what is meant by
 
 
     ```
-    
-    ![vagrant test] (https://github.com/HoGentTIN/elnx-sme-tomstechele/blob/tomstechele/report/Images/01_01.png)
+
+    ![vagrant test] (https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/testen.JPG)
 
     After `vagrant up` (when the VM is not yet created), the install page of Wordpress should be visable if you use a browser from the host system to surf to [](https://192.168.15.10/wordpress/).
-    
-    ![wordpress](https://github.com/HoGentTIN/elnx-sme-tomstechele/blob/tomstechele/report/Images/01_02.png)
+
+    ![Testing](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/testing123.JPG)
+    ![wordpress](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/wordpress.JPG)
