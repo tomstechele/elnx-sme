@@ -45,7 +45,7 @@ Every lab report should contain a test plan. To give an idea of what is meant by
 
 ![vagrant test](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/testen.JPG)
 
-    After `vagrant up` (when the VM is not yet created), the install page of Wordpress should be visable if you use a browser from the host system to surf to [](https://192.168.15.10/wordpress/).
+After `vagrant up` (when the VM is not yet created), the install page of Wordpress should be visable if you use a browser from the host system to surf to [](https://192.168.15.10/wordpress/).
 
 ![Testing](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/testing123.JPG)
 ![wordpress](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/wordpress.JPG)
