@@ -23,6 +23,7 @@ Every lab report should contain a test plan. To give an idea of what is meant by
 - Log in on the server with `vagrant ssh pu004` and run the acceptance tests. They should succeed
 
     ```
+    [vagrant@pu004 test]$ sudo /vagrant/test/bats.sh
     Running test /vagrant/test/pu004/lamp.bats
  ✓ The necessary packages should be installed
  ✓ The Apache service should be running
@@ -42,9 +43,9 @@ Every lab report should contain a test plan. To give an idea of what is meant by
    ```
 
 
-    ![vagrant test](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/testen.JPG)
+![vagrant test](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/testen.JPG)
 
     After `vagrant up` (when the VM is not yet created), the install page of Wordpress should be visable if you use a browser from the host system to surf to [](https://192.168.15.10/wordpress/).
 
-    ![Testing](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/testing123.JPG)
-    ![wordpress](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/wordpress.JPG)
+![Testing](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/testing123.JPG)
+![wordpress](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/wordpress.JPG)
