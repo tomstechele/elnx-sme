@@ -15,7 +15,7 @@ Every lab report should contain a test plan. To give an idea of what is meant by
 - Execute `vagrant up pu004`
     - The command should run without errors (exit status 0)
 
-   ![vagrant up pu004] (https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/vagrantup.JPG)
+   ![vagrant up pu004](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/vagrantup.JPG)
 
 
 
@@ -39,13 +39,9 @@ Every lab report should contain a test plan. To give an idea of what is meant by
  ✓ The Wordpress install page should be visible under http://192.0.2.50/wordpress/
  ✓ MariaDB should not have a test database
  ✓ MariaDB should not have anonymous users
+  ```
 
-
-
-
-    ```
-
-    ![vagrant test] (https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/testen.JPG)
+    ![vagrant test](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/testen.JPG)
 
     After `vagrant up` (when the VM is not yet created), the install page of Wordpress should be visable if you use a browser from the host system to surf to [](https://192.168.15.10/wordpress/).
 
