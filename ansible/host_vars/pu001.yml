@@ -1,0 +1,12 @@
+# group_vars/all.yml
+# Variables visible to all nodes
+# pu001 DNS
+---
+
+#Toevoegen van de bindzone name
+
+#The domain name
+bind_zone_name: avalon.lan
+
+#The ip adress of the master DNS server
+bind_zone_master_server_ip: 192.0.2.10

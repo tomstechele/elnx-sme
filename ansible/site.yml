@@ -3,7 +3,9 @@
 - hosts: all
   roles:
     - bertvv.rh-base
-
+- hosts: pu001, pu002
+  roles:
+    - bertvv.bind
 
 
 - hosts: pu004
