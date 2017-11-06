@@ -29,9 +29,9 @@ bind_zone_name_servers:
   - pu002
 
 
-bind_zone_mail_serveers:
-  -name: pu003
-   preference: 10
+bind_zone_mail_servers:
+  - name: pu003
+    preference: 10
 
 
 
