@@ -1,6 +1,6 @@
 # group_vars/all.yml
 # Variables visible to all nodes
-# pu001 DNS
+# pu002 Slave master
 ---
 
 #Toevoegen van de bindzone name
@@ -11,6 +11,12 @@ bind_zone_name: avalon.lan
 #The ip adress of the master DNS server
 bind_zone_master_server_ip: 192.0.2.10
 
+
 bind_zone_networks:
    - "192.0.2"
    - "172.16"
+
+#bind zone name servers
+#bind zone hosts
+#bind listen ipv4
+#bind allow query
