@@ -3,9 +3,20 @@
 - hosts: all
   roles:
     - bertvv.rh-base
+
+
+
 - hosts: pu001, pu002
+  sudo: true
   roles:
     - bertvv.bind
+- hosts: pr011
+  sudo: true
+  roles:
+    - bertvv.samba
+    - bertvv.vsftpd
+
+
 
 
 - hosts: pu004
