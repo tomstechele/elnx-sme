@@ -9,9 +9,25 @@
 #The domain name
 bind_zone_name: avalon.lan
 
+#dns toevoegen aan de firewall
+rhbase_firewall_allow_services:
+  - dns
+
 #The ip adress of the master DNS server
 bind_zone_master_server_ip: 192.0.2.10
 
 bind_zone_networks:
    - "192.0.2"
    - "172.16"
+#definieert welke hosts en query's mogen uitvoeren op de dns server
+bind_allow_query:
+  - any
+
+#Op welke ipv4 adressen de server luistert
+bind_listen_ipv4:
+  - any
+
+#list of networks that are part of the domain
+bind_zone_name_servers:
+  - pu001
+  - pu002
