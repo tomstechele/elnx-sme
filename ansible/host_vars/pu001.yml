@@ -4,7 +4,7 @@
 ---
 #Toevoegen van de bindzone name
 
-#The domain name
+#The domain name.
 bind_zone_name: avalon.lan
 
 #The ip adress of the master DNS server
