@@ -1,4 +1,4 @@
-# Enterprise Linux Lab Report: Lampstack testrapport
+# Enterprise Linux Lab Report: DNS testrapport
 
 - Student name:Tom Stechele
 - Github repo: <https://github.com/tomstechele/elnx-sme-tomstechele>
@@ -11,36 +11,81 @@ Describe the goals of the current iteration/assignment in a short sentence.
 
 Every lab report should contain a test plan. To give an idea of what is meant by this, a test plan for this assignment is given here.
 
+## Test plan
 
-- Execute `vagrant up pu004`
+
+- Check the `vagrant-hosts.yml` file, if the primary DNS server is added
+![vagrant-hosts.yml](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/vagrant-hosts.JPG)
+- Execute `vagrant up `
     - The command should run without errors (exit status 0)
+- Log in on the server with `vagrant ssh pu001` and run the acceptance tests. They should succeed
 
-   ![vagrant up pu004](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/vagrantup.JPG)
+![vagrant ssh pu001](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/vagrant_ssh.JPG)
 
-
-
-
-- Log in on the server with `vagrant ssh pu004` and run the acceptance tests. They should succeed
 
     ```
-    [vagrant@pu004 test]$ sudo /vagrant/test/bats.sh
-    Running test /vagrant/test/pu004/lamp.bats
-    ✓ The necessary packages should be installed
-    ✓ The Apache service should be running
-    ✓ The Apache service should be started at boot
-    ✓ The MariaDB service should be running
-    ✓ The MariaDB service should be started at boot
-    ✓ The SELinux status should be ‘enforcing’
-    ✓ Web traffic should pass through the firewall
-    ✓ Mariadb should have a database for Wordpress
-    ✓ The MariaDB user should have "write access" to the database
-    ✓ The website should be accessible through HTTP
-    ✓ The website should be accessible through HTTPS
-    ✓ The certificate should not be the default one
-    ✓ The Wordpress install page should be visible under http://192.0.2.50/wordpress/
-    ✓ MariaDB should not have a test database
-    ✓ MariaDB should not have anonymous users
+    Running test /vagrant/test/runbats.sh
+ ✓ The 'dig ' command should be installed
+ ✓ The main config file should be syntactically correct
+ ✓ The forward zone file should be syntactically correct
+ ✓ The reverse zone files should be syntactically correct
+ ✓ The service should be running
+ ✓ Forward lookups public servers
+ ✓ Forward lookups private servers
+ ✓ Reverse lookups public servers
+ ✓ Reverse lookups private servers
+ ✓ Alias lookups public servers
+ ✓ Alias lookups private servers
+ ✓ NS record lookup
+ ✓ Mail server lookup
+
+ 13 tests, 0 failures
+
     ```
+
+    ![runbats](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/testen.JPG)
+
+
+
+
+
+After `pu001` we test  `pu002` it should be the same outcome.
+
+- Execute `vagrant up `
+    - The command should run without errors (exit status 0)
+- Log in on the server with `vagrant ssh pu002` and run the acceptance tests. They should succeed
+
+![vagrant ssh pu002](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/vagrant_ssh2.JPG)
+
+
+
+    ```
+    Running test /vagrant/test/runbats.sh
+ ✓ The 'dig ' command should be installed
+ ✓ The main config file should be syntactically correct
+ ✓ The forward zone file should be syntactically correct
+ ✓ The reverse zone files should be syntactically correct
+ ✓ The service should be running
+ ✓ Forward lookups public servers
+ ✓ Forward lookups private servers
+ ✓ Reverse lookups public servers
+ ✓ Reverse lookups private servers
+ ✓ Alias lookups public servers
+ ✓ Alias lookups private servers
+ ✓ NS record lookup
+ ✓ Mail server lookup
+
+ 13 tests, 0 failures
+
+    ```
+
+![runbats](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/testen2.JPG)
+
+
+
+
+
+
 
 
 ![vagrant test](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/testen.JPG)
