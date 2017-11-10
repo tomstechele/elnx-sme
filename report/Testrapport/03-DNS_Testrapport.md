@@ -80,13 +80,3 @@ After `pu001` we test  `pu002` it should be the same outcome.
 ```
 
 ![runbats](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/testen2.JPG)
-
-
-
-
-
-
-
-
-![Testing](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/testing123.JPG)
-![wordpress](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/wordpress.JPG)
