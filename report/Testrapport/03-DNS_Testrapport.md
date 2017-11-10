@@ -23,7 +23,7 @@ Every lab report should contain a test plan. To give an idea of what is meant by
 ![vagrant ssh pu001](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/vagrant_ssh.JPG)
 
 
-    ```
+```
     Running test /vagrant/test/runbats.sh
  ✓ The 'dig ' command should be installed
  ✓ The main config file should be syntactically correct
@@ -41,9 +41,9 @@ Every lab report should contain a test plan. To give an idea of what is meant by
 
  13 tests, 0 failures
 
-    ```
+```
 
-    ![runbats](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/testen.JPG)
+![runbats](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/testen.JPG)
 
 
 
@@ -59,7 +59,7 @@ After `pu001` we test  `pu002` it should be the same outcome.
 
 
 
-    ```
+```
     Running test /vagrant/test/runbats.sh
  ✓ The 'dig ' command should be installed
  ✓ The main config file should be syntactically correct
@@ -77,7 +77,7 @@ After `pu001` we test  `pu002` it should be the same outcome.
 
  13 tests, 0 failures
 
-    ```
+```
 
 ![runbats](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/testen2.JPG)
 
@@ -87,10 +87,6 @@ After `pu001` we test  `pu002` it should be the same outcome.
 
 
 
-
-![vagrant test](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/testen.JPG)
-
-After `vagrant up` (when the VM is not yet created), the install page of Wordpress should be visable if you use a browser from the host system to surf to (https://192.168.15.10/wordpress/).
 
 ![Testing](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/testing123.JPG)
 ![wordpress](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/01-lampstack/wordpress.JPG)
