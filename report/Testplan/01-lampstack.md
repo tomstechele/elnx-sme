@@ -15,7 +15,7 @@ Describe the goals of the current iteration/assignment in a short sentence.
     - The command should run without errors (exit status 0)
 - Log in on the server with `vagrant ssh pu004` and run the acceptance tests. They should succeed
 
-    ```
+```
     Running test /vagrant/test/pu004/lamp.bats
  ✓ The necessary packages should be installed
  ✓ The Apache service should be running
@@ -32,8 +32,7 @@ Describe the goals of the current iteration/assignment in a short sentence.
  ✓ The Wordpress install page should be visible under http://192.0.2.50/wordpress/
  ✓ MariaDB should not have a test database
  ✓ MariaDB should not have anonymous users
-
-    ```
+```
 
 After `vagrant up` (when the VM is not yet created), the install page of Wordpress should be visable if you use a browser from the host system to surf to [](https://192.168.15.10/wordpress/).
 
