@@ -36,4 +36,28 @@ rhbase_users:
     groups:
       - users
       - management
-    password: '$6$9J5feMDP5KxcKAl4$OcGL8ePqFA64TFN5tTJ3mZLINxFWTJjIdUSPIdfg/f1sHywaaCYj64MlMIq7ndRxId47gF5btxGXQPPitUl7j/'
+    password: '$6$0hgspSoZa.HZ3588$Xya1kOzDbYRE7ttm6Zh7N/Q6.hFiXxT0prfvV5LS5tS66dheHEXZ/B2l6OB50aFaMC54zdLuFcaHu0fpVH7xP1'
+  - name: stevenv
+    comment: 'Steven Van Daele'
+    groups:
+      - users
+      - technical
+    password: '$6$U1ReO0Qc8NMffUOc$YyZEfr03XDE.dZW.Q29gPnpPbi60pArMI5duf3l84d09fyKcwkY3b68u2b44OlY7b.EA0RRAyUexUJ8Xz484d0'
+  - name: leend
+    comment: 'Leen De Meester'
+    groups:
+      - users
+      - technical
+    password: '$6$SHJrnBASVJesL2Gn$nc1m5488v.yQRc5gJUc5LqVHJPakUUuGtSRhLV3ZrTFN1A6o.nwsuI3JPdeOTahpHfkcdhlGccnD4BZYinrvz0'
+  - name: svena
+    comment: 'Sven Aerens'
+    groups:
+      - users
+      - sales
+    password: '$6$6/5Bif24keOr7YjC$LbokIj5KwGb3kN5LzUBHMrP3QHTIXGjZjwWR2JGc5xciCDzxt.ekKQ6P200DWzVmigQlWn3mLDiT9oJPMix6J/'
+  - name: nehirb
+    comment: 'Nehir Başar'
+    groups:
+      - users
+      - it
+    password: '$6$mqQpoOAUKyqZanI6$wKz7BvS/NRRhm9XoFE0OvolNbFFt32qU5NxH0WJPgvYBxn7ok1bUew6NaqwWQcxl49PxJjRrM0/WtHGM3/ACk0'
