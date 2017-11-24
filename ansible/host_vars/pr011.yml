@@ -16,3 +16,10 @@ samba_workgroup: AVALON
 
 #Directories for the share are created under this directory
 samba_shares_root: /srv/shares
+
+#List of user groups that should be present.
+rhbase_user_groups:
+  - management
+  - technical
+  - sales
+  - it
