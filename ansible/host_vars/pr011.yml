@@ -27,3 +27,13 @@ rhbase_user_groups:
   - technical
   - sales
   - it
+
+#List of dicts specifying users that should be present
+
+rhbase_users:
+  - name: stevenh
+    comment: 'Steven Hermans'
+    groups:
+      - users
+      - management
+    password: '$6$9J5feMDP5KxcKAl4$OcGL8ePqFA64TFN5tTJ3mZLINxFWTJjIdUSPIdfg/f1sHywaaCYj64MlMIq7ndRxId47gF5btxGXQPPitUl7j/'
