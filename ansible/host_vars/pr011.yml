@@ -2,3 +2,6 @@
 # Variables visible to all nodes
 # pr011 Fileserver ( Samba, FTP)
 ---
+
+
+samba_netbios_name: FILES
