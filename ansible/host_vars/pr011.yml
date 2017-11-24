@@ -3,5 +3,11 @@
 # pr011 Fileserver ( Samba, FTP)
 ---
 
+#Samba traffic shoul pass through the rhbase_firewall_allow_services
+
+rhbase_firewall_allow_services:
+  - ftp
+  - samba
+
 
 samba_netbios_name: FILES
