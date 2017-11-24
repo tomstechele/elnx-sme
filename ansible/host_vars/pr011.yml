@@ -11,6 +11,10 @@ rhbase_firewall_allow_services:
 #The netbios name of this server
 samba_netbios_name: FILES
 
+#When true, printers attached to the host are shared
+samba_load_printers:
+  - false
+
 #Name of the server workgroup
 samba_workgroup: AVALON
 
