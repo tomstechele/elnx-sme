@@ -45,6 +45,12 @@ Every lab report should contain a test plan. To give an idea of what is meant by
 
 ![runbats](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/testen.JPG)
 
+- Execute `dig @192.0.2.10 pu001.avalon.lan`
+
+![Dig pu001](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/digpu001.JPG)
+
+
+
 
 
 
@@ -80,3 +86,13 @@ After `pu001` we test  `pu002` it should be the same outcome.
 ```
 
 ![runbats](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/testen2.JPG)
+
+- Execute `dig @192.0.2.10 pu002.avalon.lan`
+
+
+
+![Dig](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/digpu002.JPG)
+
+# Ping ( tracert ) the server from hosts
+
+![Ping](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/tracert.JPG)
