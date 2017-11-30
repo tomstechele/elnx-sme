@@ -36,6 +36,8 @@ Describe the goals of the current iteration/assignment in a short sentence.
 
     ```
 
+- Execute `dig @192.0.2.10 pu001.avalon.lan` or `dig @192.0.2.10 pu002.avalon.lan` on either machine
+
 After `pu001` we test  `pu002` it should be the same outcome.
 
 - Execute `vagrant up `
@@ -61,7 +63,7 @@ After `pu001` we test  `pu002` it should be the same outcome.
  13 tests, 0 failures
 
     ```
-
+- Ping ( and tracert) the DNS server IP address at 192.0.2.10 from the host.
 
 
 
