@@ -164,5 +164,24 @@ rhbase_users:
 samba_users:
   - name: stevenh
     password: stevenh
-  - name: stevenv
-    pass
+  - name: leend
+    password: leend
+  - name: svena
+    password: svena
+  - name: nehirb
+    password: nehirb
+  - name: alexanderd
+    password: alexanderd
+  - name: krisv
+    password: krisv
+  - name: benoitp
+    password: benoitp
+  - name: anc
+    password: anc
+  - name: elenaa
+    password: elenaa
+  - name: evyt
+    password: evyt
+  - name: christophev
+    password: christophev
+  - name: 
