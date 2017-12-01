@@ -28,6 +28,53 @@ rhbase_user_groups:
   - sales
   - it
 
+#List of dict containing share definitions.
+
+samba_shares:
+  - name: public
+    comment: 'Public share, writeable by all members of group "users" '
+    public: yes
+    write_list: +users
+    valid_users: +users
+    setype: public_content_t
+  - name: management
+    comment: 'Completely inaccessible for employees outside of this unit'
+    write_list: +management
+    valid_users: +management
+    directory_mode: '0770'
+    group: management
+  - name: technical
+    comment: 'Visible for employees outside their unit, but not writeable'
+    write_list: +technical
+    valid_users: +management,+sales,+it,+technical
+    group: technical
+  - name: sales
+    comment: 'Visible to management, not writeable'
+    write_list: +sales
+    group: sales
+    valid_users: +sales, +management
+  - name: it
+    comment: 'Visible to management, not writeable'
+    write_list: +it
+    valid_users: +it, +management
+    group: it
+
+#When true, user home directories are accessible.
+
+samba_load_home: true
+
+
+
+
+
+
+
+
+
+
+
+
+
 #List of dicts specifying users that should be present
 
 rhbase_users:
@@ -109,3 +156,13 @@ rhbase_users:
       - users
       - technical
     password: '$6$XshnPo5wv9NHfm8E$5AytdskYEmCMJqW53QBOLq.kT.4tmmy3A5H.N2311os/JRQbyJcOdvAxEKmlIWf3HGJMRZO/CWAIb.FHoZB4u.'
+
+
+
+#List of dicts defining users that can access shares.
+
+samba_users:
+  - name: stevenh
+    password: stevenh
+  - name: stevenv
+    pass
