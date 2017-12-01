@@ -188,3 +188,25 @@ samba_users:
     password: stefaanv
   - name: tom
     password: tom123
+
+#Specifies whether anonymous are permitted
+vsftpd_anonymous_enable: true
+
+#Controls whether PORT style data connections use port 20 on the server machine
+vsftpd_connect_from_port_20: true
+
+#Specifies whether logins from registered users are permitted or not.
+vsftpd_local_enable: true
+
+#When enabled, run vsftpd in standalone mode. Mutually exclusive with vsftpd_listen_ipv6
+#
+vsftpd_listen: true
+
+#When enable, run vsftpd in standalone mode, over ipv6
+vsftpd_listen_ipv6: false
+
+#Controls whether any FTP commands which change the filesystem are allowed or not.
+vsftpd_write_enable: true
+
+#Directory for registered users. Defaults to their home directory.
+vsftpd_local_root: /srv/shares
