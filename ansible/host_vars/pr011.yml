@@ -61,3 +61,51 @@ rhbase_users:
       - users
       - it
     password: '$6$mqQpoOAUKyqZanI6$wKz7BvS/NRRhm9XoFE0OvolNbFFt32qU5NxH0WJPgvYBxn7ok1bUew6NaqwWQcxl49PxJjRrM0/WtHGM3/ACk0'
+  - name: alexanderd
+    comment: 'Alexander De Coninck'
+    groups:
+      - users
+      - technical
+    password: '$6$l8YpeX0eI3Jf0gGD$57gWSU8LZ48/YWNUW1yQnxSYnzEvfJsvjDA1eslGr7E4WUz4CMFTVWYivo8z9MJzKC98TPD8uzBhnxWb4xhC8/'
+  - name: krisv
+    comment: 'Kris Vanhaverbeke'
+    groups:
+      - users
+      - management
+    password: '$6$gVlcrXYZDT7KnAoK$AsYgNV9bdnkjz/vPUIHdZ.Jm8aw8fCb7TWl2R2M4FVTUYOQo/dwWeboLV4AliS1tfv0q.50LNMXQJ1x/fSwul1'
+  - name: benoitp
+    comment: 'Benoit Pluquet'
+    groups:
+      - users
+      - sales
+    password: '$6$6probdxxXGJnfdI.$9KHdcjzerJiM4xCbmnDfVY7H6womymo2W8UZI64WSqp7IztjYuVwJj8XHzNJaECpwrMyejYiyy4bFNPt8OfhB.'
+  - name: anc
+    comment: 'An Coppens'
+    groups:
+      - users
+      - technical
+    password: '$6$EJ4qsLa/1NPqGtFw$vSwMxIqBNEyirV20dLaYx/aN33lOJrt35e0PZFEG/d8DluW6TwDSIgJweMPN1FhvjpJWzMDLHc/SZuQe2vk/L1'
+  - name: elenaa
+    comment: 'Elena Andreev'
+    groups:
+      - users
+      - management
+    password: '$6$/9Qc7gHM/khfQkbb$FzEphiYOJX.E/V4NStHdzgmBpPP6QmstOyuB.t8k0BMbfeTYqvXoqwqbl1bz/wwE3DDv6vASTDVG.KWoFRlU..'
+  - name: evyt
+    comment: 'Evy Tilleman'
+    groups:
+      - users
+      - technical
+    password: '$6$Ddgfo5/v9vpcjJKy$5LLmWpB8a2W7KxvZaXstB8mWCtWLQOAG93ZzKAe/W0kNo84UUPiDIYTpsdv5jYnggnwDmhj8Uj7t/a91d0jQr1'
+  - name: christophev
+    comment: 'Christophe Van der Meersche'
+    groups:
+      - users
+      - it
+    password: '$6$Il1jdiLKdU0gAfwz$YB.SPgKUgmyiO89b0QJsjPvVe26g4Wng2lyMw1g4vCSKhcB1tfr9kvt7gylZSb6X2lp/Cxk3NAFzGIqwl75q10'
+  - name: stefaanv
+    comment: 'Stefaan Verminnen'
+    groups:
+      - users
+      - technical
+    password: '$6$XshnPo5wv9NHfm8E$5AytdskYEmCMJqW53QBOLq.kT.4tmmy3A5H.N2311os/JRQbyJcOdvAxEKmlIWf3HGJMRZO/CWAIb.FHoZB4u.'
