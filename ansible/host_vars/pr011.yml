@@ -184,4 +184,7 @@ samba_users:
     password: evyt
   - name: christophev
     password: christophev
-  - name: 
+  - name: stefaanv
+    password: stefaanv
+  - name: tom
+    password: tom123
