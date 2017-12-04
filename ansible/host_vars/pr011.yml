@@ -156,6 +156,13 @@ rhbase_users:
       - users
       - technical
     password: '$6$XshnPo5wv9NHfm8E$5AytdskYEmCMJqW53QBOLq.kT.4tmmy3A5H.N2311os/JRQbyJcOdvAxEKmlIWf3HGJMRZO/CWAIb.FHoZB4u.'
+  - name: toms
+    comment: 'Tom Stechele'
+    groups:
+      - users
+      - it
+      - wheel
+    password: '$6$5AW9P1VJllp/slxn$.1ZzzHaxoY5xHOPQzqziqDzLMPjx20oqlT5d8RZkC0.RgbfmqbMF5AhoLt9YEJvVqA93lNjhue7m8csjqw.GF.'
 
 
 
@@ -187,7 +194,7 @@ samba_users:
   - name: stefaanv
     password: stefaanv
   - name: tom
-    password: tom123
+    password: tom
 
 #Specifies whether anonymous are permitted
 vsftpd_anonymous_enable: true
