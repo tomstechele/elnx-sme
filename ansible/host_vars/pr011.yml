@@ -193,8 +193,8 @@ samba_users:
     password: christophev
   - name: stefaanv
     password: stefaanv
-  - name: tom
-    password: tom
+  - name: toms
+    password: toms
 
 #Specifies whether anonymous are permitted
 vsftpd_anonymous_enable: true
