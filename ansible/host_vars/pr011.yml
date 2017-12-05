@@ -63,18 +63,6 @@ samba_shares:
 
 samba_load_home: true
 
-
-
-
-
-
-
-
-
-
-
-
-
 #List of dicts specifying users that should be present
 
 rhbase_users:
@@ -108,12 +96,13 @@ rhbase_users:
       - users
       - it
     password: '$6$mqQpoOAUKyqZanI6$wKz7BvS/NRRhm9XoFE0OvolNbFFt32qU5NxH0WJPgvYBxn7ok1bUew6NaqwWQcxl49PxJjRrM0/WtHGM3/ACk0'
+    shell: /bin/bash
   - name: alexanderd
     comment: 'Alexander De Coninck'
     groups:
       - users
       - technical
-    password: '$6$l8YpeX0eI3Jf0gGD$57gWSU8LZ48/YWNUW1yQnxSYnzEvfJsvjDA1eslGr7E4WUz4CMFTVWYivo8z9MJzKC98TPD8uzBhnxWb4xhC8/'
+    password: '$6$DiiCL.Qewb0ATQM4$QU1x2fttEchbbqQ5mrVqjq9NtShh0Q9pGukJI680goBR7.nUMVebRa8aSpXaxAW0A8zAPgP8ryUPypRE6Rw7x1'
   - name: krisv
     comment: 'Kris Vanhaverbeke'
     groups:
@@ -150,6 +139,7 @@ rhbase_users:
       - users
       - it
     password: '$6$Il1jdiLKdU0gAfwz$YB.SPgKUgmyiO89b0QJsjPvVe26g4Wng2lyMw1g4vCSKhcB1tfr9kvt7gylZSb6X2lp/Cxk3NAFzGIqwl75q10'
+    shell: /bin/bash
   - name: stefaanv
     comment: 'Stefaan Verminnen'
     groups:
@@ -162,7 +152,7 @@ rhbase_users:
       - users
       - it
       - wheel
-    password: '$6$5AW9P1VJllp/slxn$.1ZzzHaxoY5xHOPQzqziqDzLMPjx20oqlT5d8RZkC0.RgbfmqbMF5AhoLt9YEJvVqA93lNjhue7m8csjqw.GF.'
+    password: '$6$f4ZkjstYyU2UQqjV$oWDf1pSwuvqtx7A9rMGd/OD6C7VgEVciGASl.2LnA11w9tsHIiGsL38IVU9XX2KCrF.wieF7Zm2WtkB83Oggt.'
     shell: /bin/bash
 
 
@@ -215,7 +205,7 @@ vsftpd_listen: true
 vsftpd_listen_ipv6: false
 
 #Controls whether any FTP commands which change the filesystem are allowed or not.
-vsftpd_write_enable: true
+#vsftpd_write_enable: true
 
 #Directory for registered users. Defaults to their home directory.
 vsftpd_local_root: /srv/shares
