@@ -53,11 +53,13 @@ samba_shares:
     write_list: +sales
     group: sales
     valid_users: +sales, +management
+    directory_mode: '0770'
   - name: it
     comment: 'Visible to management, not writeable'
     write_list: +it
     valid_users: +it, +management
     group: it
+    directory_mode: '0770'
 
 #When true, user home directories are accessible.
 
