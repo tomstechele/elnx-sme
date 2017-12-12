@@ -17,7 +17,7 @@ Describe the goals of the current iteration/assignment in a short sentence.
 - Log in on the server with `vagrant ssh pr011` and run the acceptance tests. They should succeed
 - If the command doesn't work use `VAGRANT_PREFER_SYSTEM_BIN=1 vagrant ssh pr`
 
-[vagrant ssh](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/vagrant%20ssh.JPG)
+![vagrant ssh](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/vagrant%20ssh.JPG)
 
     ```
     Running test /vagrant/test/pr011/samba.bats
@@ -46,7 +46,7 @@ Describe the goals of the current iteration/assignment in a short sentence.
 
     22 tests, 0 failures
     ```
-[test samba](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/testsamba.JPG)
+![test samba](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/testsamba.JPG)
 
 
 
@@ -56,11 +56,11 @@ Describe the goals of the current iteration/assignment in a short sentence.
 - try adding an directory to the share
 - check if management is accessible, change /public into /management
 - check if the user can access the group sales
-[smb client](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/smbclient.JPG)
+![smb client](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/smbclient.JPG)
 
-[adding directory](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/smbclient_user.JPG)
+![adding directory](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/smbclient_user.JPG)
 
-[overzicht](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/samba_overzicht.JPG)
+![overzicht](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/samba_overzicht.JPG)
 
 
 
@@ -92,12 +92,12 @@ Describe the goals of the current iteration/assignment in a short sentence.
 
 
     ```
-[testen VSFTP](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/vsftp_overzicht.JPG)
+![testen VSFTP](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/vsftp_overzicht.JPG)
 
  - User filezilla to test vsftpd.
  - Host: 172.16.0.11 , port 21, username: tom , password:...
 
- [filezilla](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/filezilla.JPG)
+ ![filezilla](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/filezilla.JPG)
 
 
 
