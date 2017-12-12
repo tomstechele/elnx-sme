@@ -1,7 +1,7 @@
-# Enterprise Linux Lab Report: DNS testrapport
+# Enterprise Linux Lab Report
 
 - Student name:Tom Stechele
-- Github repo: <https://github.com/tomstechele/elnx-sme-tomstechele>
+- Github repo: <https://github.com/HoGentTIN/elnx-sme-tomstechele.git>
 
 Describe the goals of the current iteration/assignment in a short sentence.
 
@@ -9,90 +9,111 @@ Describe the goals of the current iteration/assignment in a short sentence.
 
 ## Test rapport
 
-Every lab report should contain a test plan. To give an idea of what is meant by this, a test plan for this assignment is given here.
+### SAMBA
 
-## Test plan
-
-
-- Check the `vagrant-hosts.yml` file, if the primary DNS server is added
-![vagrant-hosts.yml](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/vagrant-hosts.JPG)
-- Execute `vagrant up `
-    - The command should run without errors (exit status 0)
-- Log in on the server with `vagrant ssh pu001` and run the acceptance tests. They should succeed
-
-![vagrant ssh pu001](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/vagrant_ssh.JPG)
-
-
-```
-    Running test /vagrant/test/runbats.sh
- ✓ The 'dig ' command should be installed
- ✓ The main config file should be syntactically correct
- ✓ The forward zone file should be syntactically correct
- ✓ The reverse zone files should be syntactically correct
- ✓ The service should be running
- ✓ Forward lookups public servers
- ✓ Forward lookups private servers
- ✓ Reverse lookups public servers
- ✓ Reverse lookups private servers
- ✓ Alias lookups public servers
- ✓ Alias lookups private servers
- ✓ NS record lookup
- ✓ Mail server lookup
-
- 13 tests, 0 failures
-
-```
-
-![runbats](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/testen.JPG)
-
-- Execute `dig @192.0.2.10 pu001.avalon.lan`
-
-![Dig pu001](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/digpu001.JPG)
-
-
-
-
-
-
-
-After `pu001` we test  `pu002` it should be the same outcome.
 
 - Execute `vagrant up `
     - The command should run without errors (exit status 0)
-- Log in on the server with `vagrant ssh pu002` and run the acceptance tests. They should succeed
+- Log in on the server with `vagrant ssh pr011` and run the acceptance tests. They should succeed
+- If the command doesn't work use `VAGRANT_PREFER_SYSTEM_BIN=1 vagrant ssh pr`
 
-![vagrant ssh pu002](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/vagrant_ssh2.JPG)
+[vagrant ssh](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/vagrant%20ssh.JPG)
+
+    ```
+    Running test /vagrant/test/pr011/samba.bats
+    ✓ The ’nmblookup’ command should be installed
+    ✓ The ’smbclient’ command should be installed
+    ✓ The Samba service should be running
+    ✓ The Samba service should be enabled at boot
+    ✓ The WinBind service should be running
+    ✓ The WinBind service should be enabled at boot
+    ✓ The SELinux status should be ‘enforcing’
+    ✓ Samba traffic should pass through the firewall
+    ✓ Check existence of users
+    ✓ Checks shell access of users
+    ✓ Samba configuration should be syntactically correct
+    ✓ NetBIOS name resolution should work
+    ✓ read access for share ‘public’
+    ✓ write access for share ‘public’
+    ✓ read access for share ‘management’
+    ✓ write access for share ‘management’
+    ✓ read access for share ‘technical’
+    ✓ write access for share ‘technical’
+    ✓ read access for share ‘sales’
+    ✓ write access for share ‘sales’
+    ✓ read access for share ‘it’
+    ✓ write access for share ‘it’
+
+    22 tests, 0 failures
+    ```
+[test samba](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/testsamba.JPG)
 
 
 
-```
-    Running test /vagrant/test/runbats.sh
- ✓ The 'dig ' command should be installed
- ✓ The main config file should be syntactically correct
- ✓ The forward zone file should be syntactically correct
- ✓ The reverse zone files should be syntactically correct
- ✓ The service should be running
- ✓ Forward lookups public servers
- ✓ Forward lookups private servers
- ✓ Reverse lookups public servers
- ✓ Reverse lookups private servers
- ✓ Alias lookups public servers
- ✓ Alias lookups private servers
- ✓ NS record lookup
- ✓ Mail server lookup
 
- 13 tests, 0 failures
+- Use command `smbclient -L //files/` to see the shares with user Svena
+- Use command `smbclient //files/public [-U|--user=username[%password]` the check is the share is correct
+- try adding an directory to the share
+- check if management is accessible, change /public into /management
+- check if the user can access the group sales
+[smb client](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/smbclient.JPG)
 
-```
+[adding directory](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/smbclient_user.JPG)
 
-![runbats](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/testen2.JPG)
-
-- Execute `dig @192.0.2.10 pu002.avalon.lan`
+[overzicht](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/samba_overzicht.JPG)
 
 
 
-![Dig](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/digpu002.JPG)
 
-# Ping ( tracert ) the server from hosts
 
-![Ping](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/02-DNS/tracert.JPG)
+# VSFTPD
+
+    ```
+    Running test /vagrant/test/pr011/vsftp.bats
+ ✓ VSFTPD service should be running
+ ✓ VSFTPD service should be enabled at boot
+ ✓ The ’curl’ command should be installed
+ ✓ The SELinux status should be ‘enforcing’
+ ✓ FTP traffic should pass through the firewall
+ ✓ VSFTPD configuration should be syntactically correct
+ ✓ Anonymous user should not be able to see shares
+ ✓ read access for share ‘public’
+ ✓ write access for share ‘public’
+ ✓ read access for share ‘management’
+ ✓ write access for share ‘management’
+ ✓ read access for share ‘technical’
+ ✓ write access for share ‘technical’
+ ✓ read access for share ‘sales’
+ ✓ write access for share ‘sales’
+ ✓ read access for share ‘it’
+ ✓ write access for share ‘it’
+
+  17 tests, 0 failures
+
+
+    ```
+[testen VSFTP](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/vsftp_overzicht.JPG)
+
+ - User filezilla to test vsftpd.
+ - Host: 172.16.0.11 , port 21, username: tom , password:...
+
+ [filezilla](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/filezilla.JPG)
+
+
+
+
+
+## Resources
+
+[Samba manpages](https://www.samba.org/samba/docs/man/manpages-3/smbclient.1.html)
+
+[Learning Ansible with Vagrant (Part 2/4)](https://sysadmincasts.com/episodes/45-learning-ansible-with-vagrant-part-2-4
+)
+[Bind role on ansible ](https://galaxy.ansible.com/bertvv/bind/)
+[Role variables](https://github.com/bertvv/ansible-role-bind)
+
+[Crash Course on Vagrant (revised)](https://sysadmincasts.com/episodes/42-crash-course-on-vagrant-revised)
+
+[Ansible playbooks](https://docs.ansible.com/ansible/playbooks.html)
+
+[Ansible information by Bert vv](https://github.com/bertvv/ansible-skeleton)
