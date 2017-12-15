@@ -19,7 +19,7 @@ Describe the goals of the current iteration/assignment in a short sentence.
 
 ![vagrant ssh](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/vagrant%20ssh.JPG)
 
-    ```
+  ```
     Running test /vagrant/test/pr011/samba.bats
     ✓ The ’nmblookup’ command should be installed
     ✓ The ’smbclient’ command should be installed
@@ -45,7 +45,8 @@ Describe the goals of the current iteration/assignment in a short sentence.
     ✓ write access for share ‘it’
 
     22 tests, 0 failures
-    ```
+
+  ```
 ![test samba](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/testsamba.JPG)
 
 
