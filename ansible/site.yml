@@ -31,7 +31,7 @@
         etype: group
         permissions: rx
         state: present
-        
+
 
 
 
@@ -51,3 +51,8 @@
     - bertvv.mariadb
     - bertvv.httpd
     - bertvv.wordpress
+
+- hosts: pr001
+  sudo: true
+  roles:
+      - bertvv.dhcp
