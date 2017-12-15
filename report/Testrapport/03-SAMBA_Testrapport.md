@@ -69,7 +69,7 @@ Describe the goals of the current iteration/assignment in a short sentence.
 
 # VSFTPD
 
-    ```
+```
     Running test /vagrant/test/pr011/vsftp.bats
  ✓ VSFTPD service should be running
  ✓ VSFTPD service should be enabled at boot
@@ -92,7 +92,7 @@ Describe the goals of the current iteration/assignment in a short sentence.
   17 tests, 0 failures
 
 
-    ```
+```
 ![testen VSFTP](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/03-SAMBA/vsftp_overzicht.JPG)
 
  - User filezilla to test vsftpd.
