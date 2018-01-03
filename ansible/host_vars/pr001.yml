@@ -22,3 +22,13 @@
       domain_name_servers: #DNS server, in this case the DNS forwarding router
         - 172.16.255.254
       max_lease_time: 43200
+      pools:
+        - default_lease_time: 14400
+          range_begin: 172.16.192.1
+          range_end: 172.16.255.253
+          allow: unknown-clients
+
+dhcp_hosts:
+  - name: Fedora
+    mac: '08002742B6DA'
+    ip: 172.16.128.2
