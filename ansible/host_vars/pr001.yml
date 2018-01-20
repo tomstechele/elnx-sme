@@ -1,34 +1,43 @@
 # group_vars/all.yml
 # Variables visible to all nodes
 # pr001
+#test
 ---
 
 #installs the DHCP package
- rhbase_install_packages:
-   - dhcp
+rhbase_install_packages:
+  - dhcp
 
-# allows the DHCP services through the firewall
-  rhbase_firewall_allow_services:
-    - dhcp
+# allows the DHCP services through the firewall  
+rhbase_firewall_allow_services:
+  - dhcp
 
 #specifies the global domain name as 'avalon.lan'
-  dhcp_global_domain_name: avalon.lan
+dhcp_global_domain_name: avalon.lan
+
+
+dhcp_global_routers: 172.16.255.254
+
+
+dhcp_global_domain_name_servers:
+  - 192.0.2.10
+  - 192.0.2.11
 
 #specifies the subnets available to the DHCP server
-
-  dhcp_subnets:
-    - ip: 172.16.0.0
-      netmask: 255.255.0.0 # range of 172.16.0.1 -> 172.16.255.254
-      domain_name_servers: #DNS server, in this case the DNS forwarding router
-        - 172.16.255.254
-      max_lease_time: 43200
-      pools:
-        - default_lease_time: 14400
-          range_begin: 172.16.192.1
-          range_end: 172.16.255.253
-          allow: unknown-clients
+#range of 172.16.0.1 -> 172.16.255.254
+dhcp_subnets:
+  - ip: 172.16.0.0
+    netmask: 255.255.0.0
+    domain_name_servers:
+      - 172.16.255.254
+    default_lease_time: 43200
+    pools:
+      - default_lease_time: 14400
+        range_begin: 172.16.192.1
+        range_end: 172.16.255.253
+        allow: unknown-clients
 
 dhcp_hosts:
-  - name: Fedora
-    mac: '08002742B6DA'
+  - name: ws001
+    mac: '08:00:27:64:D8:70'
     ip: 172.16.128.2

@@ -40,7 +40,7 @@ bind_zone_networks:
 
 #Declareren van de verschillende hosts
 bind_zone_hosts:
-  - name: r001
+  - name: router
     ip: 192.0.2.254
     aliases:
       - gw
