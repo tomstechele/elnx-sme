@@ -206,8 +206,11 @@ vsftpd_listen: true
 #When enable, run vsftpd in standalone mode, over ipv6
 vsftpd_listen_ipv6: false
 
+
 #Controls whether any FTP commands which change the filesystem are allowed or not.
-#vsftpd_write_enable: true
+vsftpd_write_enable: true
 
 #Directory for registered users. Defaults to their home directory.
 vsftpd_local_root: /srv/shares
+
+vsftpd_settype: public_content_t
