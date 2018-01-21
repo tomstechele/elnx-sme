@@ -1,8 +1,11 @@
 # site.yml
 ---
 - hosts: all
+  sudo: true
   roles:
     - bertvv.rh-base
+
+
 
 
 
@@ -16,21 +19,7 @@
   roles:
     - bertvv.samba
     - bertvv.vsftpd
-  post_tasks:
-    - name: ACL share Sales
-      acl:
-        path: /srv/shares/sales
-        entity: management
-        etype: group
-        permissions: rx
-        state: present
-    - name: ACL share it
-      acl:
-        path: /srv/shares/it
-        entity: management
-        etype: group
-        permissions: rx
-        state: present
+
 
 
 
@@ -51,6 +40,8 @@
     - bertvv.mariadb
     - bertvv.httpd
     - bertvv.wordpress
+
+
 
 - hosts: pr001
   sudo: true

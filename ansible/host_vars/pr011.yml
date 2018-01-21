@@ -62,7 +62,6 @@ samba_shares:
     directory_mode: '0770'
 
 #When true, user home directories are accessible.
-
 samba_load_home: true
 
 #List of dicts specifying users that should be present
@@ -212,5 +211,3 @@ vsftpd_write_enable: true
 
 #Directory for registered users. Defaults to their home directory.
 vsftpd_local_root: /srv/shares
-
-vsftpd_settype: public_content_t
