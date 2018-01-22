@@ -22,13 +22,3 @@ rhbase_users:
 
 
 rhbase_motd: true
-
-fail2ban_services:
-  - name: ssh
-    port: ssh
-    filter: sshd
-    logpath: /var/log/auth.logpath
-  - name: postfix
-    port: smtp, smtp
-    filter: postfix
-    logpath: /var/log/mail.log
