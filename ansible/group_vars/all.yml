@@ -12,6 +12,7 @@ rhbase_install_packages:
   - tree
   - wget
 
+
 rhbase_users:
   - name: tom
     comment: 'Tom Stechele'

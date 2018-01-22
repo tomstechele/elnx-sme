@@ -21,10 +21,6 @@
     - bertvv.vsftpd
 
 
-
-
-
-
 - hosts: pu004
   sudo: true
   pre_tasks:
