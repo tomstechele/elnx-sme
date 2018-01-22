@@ -28,37 +28,16 @@ Simple workflow for a personal project without other contributors:
 3. Is a DNS-server available? `cat /etc/resolv.conf`
 
 
-## Certificates
-1. Generate a private key
+# Dig commando
 
-`openssl genrsa -out ca.key 2048`
-> This generates a CSR: Certificate Signing Request key
+| Task                                         | Command                   |
+| :---                                         | :---                      |
+| Querying DNS nameservers                     | `dig mt-example.com`              |
 
-2. Generate csr
 
-`openssl req -new -key ca.key -out ca.csr`
-> This generates a self signed key
+## What can you find using the dig command?
 
-3. Copy the files to the correct locations with a pre task
-
-```
-pre_tasks:
-  - name: copy key file
-    copy:
-      src: files/pu004.key
-      dest: /etc/pki/tls/private/pu004.key
-  - name: copy cert files
-    copy:
-      src: files/pu004.crt
-      dest: /etc/pki/tls/certs/
-
-```
-
-> automation of the Certificates, its copy the .crt and .key to the folder that you made.
-
-4. Change paths for key and crt file
-
-```
-httpd_SSLCertificateFile: /etc/pki/tls/certs/pu004.crt
-httpd_SSLCertificateKeyFile: /etc/pki/tls/private/pu004.key
-```
+- IP address
+- text annotations
+- mail exchanges
+- NS nameservers
