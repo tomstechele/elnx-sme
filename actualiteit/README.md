@@ -83,9 +83,10 @@ sysdate_is_now           = 1
 
 # Improvements Binary logging
 
+
 ## Log_bin
 
-Description:
+Description: The binary log contains a record of all changes to the databases, both data and structure, as well as how long each statement took to execute. It consists of a set of binary log files and an index.
 
 ```
 log_bin = {path}
