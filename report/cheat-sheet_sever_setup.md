@@ -38,3 +38,31 @@ under roles:  add -bertvv.rhbase
 1. Download the role from the github respository
 
 [Role download](https://github.com/bertvv/ansible-role-rh-base/releases)
+
+2. Open the `all.yml` file to make configurations to all servers.
+
+```
+rhbase_install_packages:
+  - bash-completion
+  - vim-enhanced
+  - bind-utils
+  - git
+  - nano
+  - tree
+  - wget
+
+```
+
+3. Create a user with rhbase
+
+
+```
+rhbase_users:
+  - name: tom
+    comment: 'Tom Stechele'
+    groups:
+      - users
+      - wheel
+
+```
+The group 'wheel' makes the user automatically sudo in Centos.

@@ -57,7 +57,7 @@ max_connect_errors            = {{ mariadb_max_connect_errors }}
 #### /defaults/mains.yml
 
 ```
-max_connect_errors            = 10
+mariadb_max_connect_errors            = 10
 ```
 
 ## sysdate_is_now
@@ -78,7 +78,7 @@ sysdate_is_now           = {{ mariadb_sysdate_is_now }}
 #### /defaults/mains.yml
 
 ```
-sysdate_is_now           = 1
+mariadb_sysdate_is_now           = 1
 ```
 
 # Improvements Binary logging
@@ -142,7 +142,7 @@ sync_binlog         = {{ mariadb_sync_binlog }}
 #### /defaults/mains.yml
 
 ```
-expire_logs_days          = 10
+sync_binlog :    1      
 ```
 
 # Improvements Caches and limits
