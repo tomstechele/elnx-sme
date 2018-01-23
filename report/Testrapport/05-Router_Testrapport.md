@@ -16,16 +16,31 @@ Describe the goals of the current iteration/assignment in a short sentence.
     - The command should run without errors (exit status 0)
 - Log in on the server with `vagrant ssh router`
 - If the command doesn't work use `VAGRANT_PREFER_SYSTEM_BIN=1 vagrant ssh router`
+
+![ssh](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/05-ROUTER/ssh.JPG)
+
+
 - Test IP , Routing and DNS setup by executing: vagrant@router:~$ `curl icanhazip.com `, this HTTP request
 should return an IP address.
+
+![curl](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/05-ROUTER/icanha.JPG)
+
 - start the workstation and open the internet browser, there should be general internet
 - surf to `avalon.lan ` you should see an Apache default welcome page.
+
+![mozilla](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/05-ROUTER/mozilla.JPG)
+![apache](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/05-ROUTER/apache.JPG)
+
 - Enter `smb://172.16.0.11/`  in the browser. You should see the shares from SAMBA.
-- Enter `ftp://172.10.0.11/ ` in the browser. You shoudl be prompted for login. Log in with credentials and check
-if the policies are in place by accessing the shares. If you log in with the admin `Tom ` you shoud be able to access all samba_shares
+
+![smb](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/05-ROUTER/smbclient.JPG)
+
+
+- Enter `ftp://172.10.0.11/ ` in the browser. You should be prompted for login. Log in with credentials and check
+if the policies are in place by accessing the shares. If you log in with the admin `tom ` you shoud be able to access all samba_shares
 except management share.  
 
-
+![ftp](https://github.com/tomstechele/elnx-sme-tomstechele/blob/tomstechele/report/Images/05-ROUTER/ftp.JPG)
 
 
 
