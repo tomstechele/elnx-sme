@@ -1,11 +1,11 @@
 # Evaluatie Enterprise Linux
 
-| :---          | :---                                                |
-| Student       | Tom STECHELE                                        |
-| Klasgroep     | gent                                                |
-| Email         | <mailto:tom.stechele.u8757@student.hogent.be>       |
-| Hoofdopdracht | SME                                                 |
-| Repo          | <git@github.com:HoGentTIN/elnx-sme-tomstechele.git> |
+| :---          | :---                                                  |
+| Student       | Tom STECHELE                                          |
+| Klasgroep     | gent                                                  |
+| Email         | <mailto:tom.stechele.u8757@student.hogent.be>         |
+| Hoofdopdracht | SME                                                   |
+| Repo          | <https://github.com/tomstechele/elnx-sme-tomstechele> |
 
 ## Hoofdopdracht
 
@@ -17,9 +17,17 @@ W12:
 
 - Samba + Vsftpd afgewerkt en gedemonstreerd
 
+Eindevaluatie:
+
+- Acceptatietests gedemonstreerd: LAMP, DNS
+- Integratie-opdracht:
+    - Lokaal FTP/Samba via hostnaam/NetBIOS: ok
+    - Lokale website + internettoegang: ok
+    - DHCP testen via nmap
+
 ### Eindbeoordeling
 
-O1: <BEOORDELING>
+O1: Deskundig
 
 ## Troubleshooting
 
@@ -43,23 +51,29 @@ O2: Deskundig
 
 ## Opdracht Actualiteit
 
-Onderwerp = Fail2ban
+- Onderwerp = Fail2ban
+- Verbeteringen MariaDB:
+    - Nog enkele tikfouten overgebleven, graag aanpassen
 
 ### Eindbeoordeling
 
-O3: <BEOORDELING>
+O3: Gevorderd
 
 ## Rapportering
 
 ### Laboverslagen
 
-R1: <BEOORDELING>
+R1: Deskundig
 
 ### Demonstraties
 
-R2: <BEOORDELING>
+Goed voorbereid, scenario op papier als ondersteuning
+
+R2: Deskundig
 
 ### Cheat sheet
 
-R3: <BEOORDELING>
+Uitgebreide cheat sheets
+
+R3: Deskundig
 
